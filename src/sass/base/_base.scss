@@ -1,0 +1,28 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: .75rem;
+}
+
+h1{
+    font-family: var(--font--logo);
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+h3{
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+p{
+    font-family: var(--font-secondary);
+}
+

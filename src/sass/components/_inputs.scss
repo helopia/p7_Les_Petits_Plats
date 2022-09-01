@@ -1,0 +1,29 @@
+.input-group input, .input-group span {
+    background-color: transparent;
+    border: none;
+}
+
+.input-group-text{
+    background-color: transparent;
+    border: none;
+}
+
+.form-control{
+    color: black;
+    background-color: transparent;
+    max-width: 90%;
+    border: none;
+    &::placeholder{
+        color: rgba(0, 0, 0, .25)
+    }
+    &:focus{
+        background-color: transparent;
+    }
+}
+
+.form-control:focus, .dropdown-input:focus{
+    outline: none;
+    border: none;
+    border-color: none;
+    box-shadow: none;
+}

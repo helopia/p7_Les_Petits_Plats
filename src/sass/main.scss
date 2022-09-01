@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "./Utils/variables";
+
+@import "./Base/base";
+@import "./Base/animations";
+
+@import "./Components/buttons";
+@import "./Components/cards";
+@import "./Components/dropdowns";
+@import "./Components/inputs";
+
+@import "./Layouts/header";

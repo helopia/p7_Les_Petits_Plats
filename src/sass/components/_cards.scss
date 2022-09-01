@@ -1,0 +1,47 @@
+.card{
+    border: none;
+    &:hover, &:focus{
+        filter: drop-shadow(0 0 0.2rem #999);
+        transform: scale(1.01);
+    }
+    .bg-light{
+        background-color: var(--bg-light) !important;
+    }
+    
+    .bg-secondary{
+        background-color: var(--bg-secondary);
+    }
+    &-img-top{
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 5px 5px 0 0;
+    }    
+    &-body{
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 0 0 5px 5px;
+        .far{
+            font-size: 20px;
+        }
+    }
+}
+
+.error-message{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    h2{
+        font-weight: bold;
+    }
+    a{
+        color:#D04F4F;
+        font-style: italic;
+    }
+    svg{
+        fill: #D04F4F;
+    }
+}
