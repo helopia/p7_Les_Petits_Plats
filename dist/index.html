@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les petits plats | Accueil</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Lato:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <a class="d-block mx-auto mt-5 mb-3" href="index.html"><img class="d-block mx-auto" src="../assets/logo.png" alt="logo du site les petits plats" /></a>
+        <nav class="navbar navbar-light bg-light py-2">
+            <input id="nav-search" type="text" name="nav-search" class="form-control" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette." aria-label="Search" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1" title="search"><i class="fas fa-search"></i></span>
+        </nav>
+    </header>
+    <main>
+        <section id="search">
+            <div id="search-worlds" class="py-2"></div>
+            <div id="dropdown-buttons" class="container-fluid">
+                <div class="row">
+                    <div class="btn-group bg-primary me-3 mb-2">
+                        <div role="menu" class="btn btn-primary btn-lg" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <input class="dropdown-input btn btn-primary" name="ingredients" id="ingredients-input" type="text" placeholder="Ingrédients">
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-primary ingredients-suggestions"></ul>
+                    </div>
+                    <div class="btn-group bg-success me-3 mb-2">
+                        <div role="menu" class="btn btn-success btn-lg" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <input class="dropdown-input btn btn-success" name="appareils" id="appareils-input" type="text" placeholder="Appareil">
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-success appareils-suggestions"></ul>
+                    </div>
+
+                    <div class="btn-group bg-danger me-3 mb-2">
+                        <div role="menu" class="btn btn-danger btn-lg" data-bs-toggle="dropdown" aria-expanded="false" >
+                            <input class="dropdown-input btn btn-danger" name="ustensiles" id="ustensiles-input" type="text" placeholder="Ustensiles">
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-danger ustensiles-suggestions"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cards">
+            <div class="row row-cols-1 row-cols-md-3 g-4 gx-4"></div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
